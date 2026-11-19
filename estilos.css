@@ -492,39 +492,34 @@ footer {
 
 
 
+
 /* ==========================================
-   CARGOS - UNIVERSIDADES EN DOS COLUMNAS
+   CARGOS - UNIVERSIDADES
 ========================================== */
 
 #cargos .universidades-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 28px;
-  row-gap: 0;
   margin: 18px 0 22px;
   padding: 0;
 }
 
-/* COLUMNAS INDEPENDIENTES */
-
 #cargos .universidades-columna {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 10px;
-  min-width: 0;
+  list-style: disc;
+  padding-left: 18px;
   margin: 0;
-  padding: 0;
 }
 
-/* CADA UNIVERSIDAD */
-
-#cargos .universidades-columna p {
-  margin: 0 !important;
-  padding: 0 !important;
-  color: var(--muted);
-  font-size: 16px;
+#cargos .universidades-columna li {
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
+  font-size: 16px;
+}
+
+#cargos .universidades-columna li + li {
+  margin-top: 10px;
 }
 
 /* SEPARACIÓN ENTRE PÁRRAFOS */
@@ -533,21 +528,17 @@ footer {
   margin-top: 16px !important;
 }
 
-/* EVITAR DOBLE LÍNEA AL FINAL DE CARGOS */
+/* EVITAR DOBLE LÍNEA */
 
 #cargos > .estudio:last-child {
   border-bottom: none;
 }
 
-/* ==========================================
-   ADAPTACIÓN A CELULARES
-========================================== */
+/* CELULARES */
 
 @media (max-width: 650px) {
-
   #cargos .universidades-grid {
     grid-template-columns: 1fr;
     row-gap: 10px;
   }
-
 }
