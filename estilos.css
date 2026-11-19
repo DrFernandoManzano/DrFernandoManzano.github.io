@@ -490,18 +490,30 @@ footer {
   color: #37567a;
 }
 
+
 /* CARGOS - UNIVERSIDADES EN DOS COLUMNAS */
 
 .universidades-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 28px;
-  row-gap: 10px;
-  padding-left: 20px;
+  row-gap: 0;
+  padding-left: 0;
   margin: 18px 0 22px;
+  list-style: none;
 }
 
-.universidades-grid li {
+/* COLUMNAS INDEPENDIENTES */
+
+.universidades-columna {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.universidades-columna li {
+  margin: 0 0 10px;
+  padding: 0;
   line-height: 1.5;
 }
 
@@ -522,6 +534,6 @@ footer {
 @media (max-width: 650px) {
   .universidades-grid {
     grid-template-columns: 1fr;
-    row-gap: 8px;
+    row-gap: 0;
   }
 }
