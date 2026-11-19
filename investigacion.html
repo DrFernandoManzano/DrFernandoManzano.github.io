@@ -1,293 +1,370 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Formación y trayectoria científica de Fernando Ariel Manzano.">
-  <title>Investigación científica | Dr. Fernando Ariel Manzano</title>
-  <link rel="stylesheet" href="estilos.css">
-  <style>
-    #cargos .universidades-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      column-gap: 28px;
-      row-gap: 10px;
-      padding-left: 20px;
-      margin: 18px 0 22px;
-    }
-    #cargos .universidades-grid li { line-height: 1.5; }
-    #cargos .parrafo-separado { margin-top: 16px; }
-    #cargos > .estudio:last-child { border-bottom: none; }
-    @media (max-width: 650px) {
-      #cargos .universidades-grid {
-        grid-template-columns: 1fr;
-        row-gap: 8px;
-      }
-    }
-    #producciones .publicaciones-lista {
-      padding-left: 1.5rem;
-      margin: 1rem 0 2.5rem;
-    }
-    #producciones .publicaciones-lista li {
-      margin-bottom: .85rem;
-      line-height: 1.65;
-      padding-left: .2rem;
-    }
-    #producciones .publicaciones-lista a {
-      color: #175b9a;
-      text-decoration: none;
-    }
-    #producciones .publicaciones-lista a:hover {
-      text-decoration: underline;
-    }
-    #producciones h3 { margin-top: 2rem; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Formación, trayectoria y publicaciones científicas de Fernando Ariel Manzano">
+<title>Investigación científica | Dr. Fernando Ariel Manzano</title>
+<link rel="stylesheet" href="estilos.css">
+
+<style>
+#cargos .universidades-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+  row-gap: 10px;
+  margin: 18px 0 22px;
+}
+#cargos .universidades-columna {
+  padding-left: 18px;
+  margin: 0;
+}
+#cargos .universidades-columna li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+#cargos .parrafo-separado {
+  margin-top: 16px;
+}
+#cargos > .estudio:last-child {
+  border-bottom: none;
+}
+#producciones .publicaciones-lista {
+  padding-left: 1.5rem;
+  margin: 1rem 0 2.5rem;
+}
+#producciones .publicaciones-lista li {
+  margin-bottom: .85rem;
+  line-height: 1.65;
+  padding-left: .2rem;
+}
+#producciones .publicaciones-lista a {
+  color: #175b9a;
+  text-decoration: none;
+}
+#producciones .publicaciones-lista a:hover,
+#producciones .publicaciones-lista a:focus-visible {
+  text-decoration: underline;
+}
+#producciones h3 {
+  margin-top: 2rem;
+}
+@media (max-width: 650px) {
+  #cargos .universidades-grid {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <a class="brand" href="index.html">FERNANDO ARIEL MANZANO</a>
-    <nav aria-label="Navegación principal">
-      <a href="index.html">Inicio</a>
-      <a href="investigacion.html">Investigación científica</a>
-      <a href="asesoramiento.html">Asesoramiento y análisis aplicado</a>
-      <a href="divulgacion.html">Divulgación científica</a>
-    </nav>
-  </header>
+<header>
+  <a class="brand" href="index.html">FERNANDO ARIEL MANZANO</a>
+  <nav aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="investigacion.html">Investigación científica</a>
+    <a href="asesoramiento.html">Asesoramiento y análisis aplicado</a>
+    <a href="divulgacion.html">Divulgación científica</a>
+  </nav>
+</header>
 
-  <main>
-    <section class="page">
-      <a class="back" href="index.html">← Volver al inicio</a>
-      <h1>Investigación científica</h1>
-      <p class="presentacion">
-        Formación interdisciplinaria, trayectoria académica
-        y aportes a la producción de conocimiento.
-      </p>
+<main>
+<section class="page">
+<a class="back" href="index.html">← Volver al inicio</a>
+<h1>Investigación científica</h1>
 
-      <p class="titulo-navegacion">Explorar investigación</p>
-      <nav class="menu-secciones" aria-label="Secciones de investigación">
-        <a href="#formacion">Formación</a>
-        <a href="#cargos">Cargos</a>
-        <a href="#producciones">Producciones</a>
-      </nav>
+<p class="presentacion">
+  Formación interdisciplinaria, trayectoria académica
+  y aportes a la producción de conocimiento.
+</p>
 
-      <!-- FORMACIÓN -->
-      <section class="formacion" id="formacion">
-        <h2>Formación</h2>
-        <p>
-          Mi formación integra tres disciplinas que permiten
-          estudiar los cambios de la población y sus
-          consecuencias económicas, sociales y territoriales.
-        </p>
+<p class="titulo-navegacion">Explorar investigación</p>
+<nav class="menu-secciones" aria-label="Secciones de investigación">
+  <a href="#formacion">Formación</a>
+  <a href="#cargos">Cargos</a>
+  <a href="#producciones">Producciones</a>
+</nav>
 
-        <div class="estudio">
-          <h3>Posdoctorado</h3>
-          <p>IGEHCS · CONICET–UNICEN · 2017</p>
-        </div>
-        <div class="estudio">
-          <h3>Doctor en Demografía</h3>
-          <p>Universidad Nacional de Córdoba · 2015</p>
-        </div>
-        <div class="estudio">
-          <h3>Licenciado en Economía</h3>
-          <p>Universidad de Buenos Aires · 2007</p>
-        </div>
-        <div class="estudio">
-          <h3>Licenciado en Sociología</h3>
-          <p>Universidad de Buenos Aires · 2013</p>
-        </div>
+<!-- FORMACIÓN -->
+<section class="formacion" id="formacion">
+<h2>Formación</h2>
+<p>
+  Mi formación integra tres disciplinas que permiten
+  estudiar los cambios de la población y sus
+  consecuencias económicas, sociales y territoriales.
+</p>
 
-        <div class="evolucion">
-          <h3>De la formación a nuevas líneas de investigación</h3>
-          <p>
-            Mi trayectoria científica comenzó con el estudio
-            de la dinámica demográfica, las migraciones, el
-            mercado laboral y las desigualdades sociales.
-            La integración de la demografía, la economía y
-            la sociología permitió ampliar estos enfoques
-            hacia el análisis de las transformaciones
-            económicas y territoriales de la población.
-          </p>
-          <p>
-            En los últimos años, mis investigaciones
-            incorporaron nuevas problemáticas, especialmente
-            el envejecimiento poblacional, la economía plateada
-            y los cambios en la composición de los hogares
-            y sus patrones de consumo.
-          </p>
-          <p>
-            Esta evolución también impulsó el desarrollo
-            de herramientas cuantitativas y de análisis
-            territorial que permiten transformar el
-            conocimiento científico en información útil
-            para la planificación y la toma de decisiones
-            públicas y privadas.
-          </p>
-        </div>
+<div class="estudio">
+  <h3>Posdoctorado</h3>
+  <p>IGEHCS · CONICET–UNICEN · 2017</p>
+</div>
+<div class="estudio">
+  <h3>Doctor en Demografía</h3>
+  <p>Universidad Nacional de Córdoba · 2015</p>
+</div>
+<div class="estudio">
+  <h3>Licenciado en Economía</h3>
+  <p>Universidad de Buenos Aires · 2007</p>
+</div>
+<div class="estudio">
+  <h3>Licenciado en Sociología</h3>
+  <p>Universidad de Buenos Aires · 2013</p>
+</div>
 
-        <div class="enlace-cv">
-          <a href="cv-academico.pdf" target="_blank"
-             rel="noopener noreferrer">
-            Consultar currículum académico completo (PDF) ↗
-          </a>
-        </div>
-      </section>
+<div class="evolucion">
+  <h3>De la formación a nuevas líneas de investigación</h3>
+  <p>
+    Mi trayectoria científica comenzó con el estudio
+    de la dinámica demográfica, las migraciones, el
+    mercado laboral y las desigualdades sociales.
+    La integración de la demografía, la economía y
+    la sociología permitió ampliar estos enfoques
+    hacia el análisis de las transformaciones
+    económicas y territoriales de la población.
+  </p>
+  <p>
+    En los últimos años, mis investigaciones
+    incorporaron nuevas problemáticas, especialmente
+    el envejecimiento poblacional, la economía plateada
+    y los cambios en la composición de los hogares
+    y sus patrones de consumo.
+  </p>
+  <p>
+    Esta evolución también impulsó el desarrollo
+    de herramientas cuantitativas y de análisis
+    territorial que permiten transformar el
+    conocimiento científico en información útil
+    para la planificación y la toma de decisiones
+    públicas y privadas.
+  </p>
+</div>
 
-      <!-- CARGOS -->
-      <section class="seccion-investigacion" id="cargos">
-        <h2>Cargos</h2>
-        <p>
-          Mi trayectoria combina investigación científica,
-          docencia universitaria, dirección de proyectos
-          y asesoramiento institucional, integrando
-          conocimientos de demografía, economía,
-          análisis territorial e inteligencia artificial.
-        </p>
+<div class="enlace-cv">
+  <a href="cv-academico.pdf" target="_blank" rel="noopener noreferrer">
+    Consultar currículum académico completo (PDF) ↗
+  </a>
+</div>
+</section>
 
-        <div class="estudio">
-          <h3>Docencia universitaria</h3>
-          <p>
-            Experiencia docente en carreras de grado,
-            posgrado y programas de capacitación
-            especializada en distintas universidades
-            nacionales:
-          </p>
-          <div class="universidades-grid">
-            <ul class="universidades-columna">
-              <li>Universidad de Buenos Aires (UBA).</li>
-              <li>Universidad Nacional de La Plata (UNLP).</li>
-              <li>Universidad Nacional de San Luis (UNSL).</li>
-              <li>Universidad Nacional de Mar del Plata (UNMdP).</li>
-            </ul>
-            <ul class="universidades-columna">
-              <li>Universidad Tecnológica Nacional (UTN).</li>
-              <li>Universidad Nacional de Rosario (UNR).</li>
-              <li>Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN).</li>
-            </ul>
-          </div>
-        </div>
+<!-- CARGOS -->
+<section class="seccion-investigacion" id="cargos">
+<h2>Cargos</h2>
+<p>
+  Mi trayectoria combina investigación científica,
+  docencia universitaria, dirección de proyectos
+  y asesoramiento institucional, integrando
+  conocimientos de demografía, economía,
+  análisis territorial e inteligencia artificial.
+</p>
 
-        <div class="estudio">
-          <h3>Dirección de proyectos y formación de investigadores</h3>
-          <p>
-            Experiencia en dirección y participación
-            en proyectos de investigación sobre
-            problemáticas económicas, sociales y
-            territoriales, incorporando herramientas
-            estadísticas y de inteligencia artificial.
-          </p>
-          <p class="parrafo-separado">
-            Dirección y acompañamiento de investigadores
-            en formación, incluyendo tesis de maestría,
-            doctorado y becas posdoctorales.
-          </p>
-        </div>
+<div class="estudio">
+  <h3>Docencia universitaria</h3>
+  <p>
+    Experiencia docente en carreras de grado,
+    posgrado y programas de capacitación
+    especializada en distintas universidades nacionales:
+  </p>
+  <div class="universidades-grid">
+    <ul class="universidades-columna">
+      <li>Universidad de Buenos Aires (UBA).</li>
+      <li>Universidad Nacional de La Plata (UNLP).</li>
+      <li>Universidad Nacional de San Luis (UNSL).</li>
+      <li>Universidad Nacional de Mar del Plata (UNMdP).</li>
+    </ul>
+    <ul class="universidades-columna">
+      <li>Universidad Tecnológica Nacional (UTN).</li>
+      <li>Universidad Nacional de Rosario (UNR).</li>
+      <li>Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN).</li>
+    </ul>
+  </div>
+</div>
 
-        <div class="estudio">
-          <h3>Evaluación y asesoramiento científico</h3>
-          <p>
-            Experiencia en evaluación académica y
-            científica para organismos de investigación,
-            universidades y publicaciones especializadas.
-          </p>
-          <ul>
-            <li>Evaluación de investigadores y becarios.</li>
-            <li>Evaluación de proyectos y programas de investigación.</li>
-            <li>Evaluación de artículos para revistas científicas.</li>
-            <li>Participación en jurados de tesis y evaluaciones institucionales.</li>
-          </ul>
-          <p>
-            Estas actividades reflejan una trayectoria
-            orientada al rigor metodológico, la
-            investigación aplicada y la generación
-            de conocimiento útil para la toma de decisiones.
-          </p>
-        </div>
-      </section>
+<div class="estudio">
+  <h3>Dirección de proyectos y formación de investigadores</h3>
+  <p>
+    Experiencia en dirección y participación
+    en proyectos de investigación sobre
+    problemáticas económicas, sociales y
+    territoriales, incorporando herramientas
+    estadísticas y de inteligencia artificial.
+  </p>
+  <p class="parrafo-separado">
+    Dirección y acompañamiento de investigadores
+    en formación, incluyendo tesis de maestría,
+    doctorado y becas posdoctorales.
+  </p>
+</div>
 
-      <!-- PRODUCCIONES -->
-      <section class="seccion-investigacion" id="producciones">
-        <h2>Producciones</h2>
+<div class="estudio">
+  <h3>Evaluación y asesoramiento científico</h3>
+  <p>
+    Experiencia en evaluación académica y
+    científica para organismos de investigación,
+    universidades y publicaciones especializadas.
+  </p>
+  <ul>
+    <li>Evaluación de investigadores y becarios.</li>
+    <li>Evaluación de proyectos y programas de investigación.</li>
+    <li>Evaluación de artículos para revistas científicas.</li>
+    <li>Participación en jurados de tesis y evaluaciones institucionales.</li>
+  </ul>
+  <p>
+    Estas actividades reflejan una trayectoria
+    orientada al rigor metodológico, la
+    investigación aplicada y la generación
+    de conocimiento útil para la toma de decisiones.
+  </p>
+</div>
+</section>
 
-        <h3>Artículos científicos publicados en revistas académicas</h3>
-        <p>59 publicaciones, ordenadas de la más reciente a la más antigua.</p>
+<!-- PRODUCCIONES -->
+<section class="seccion-investigacion" id="producciones">
+<h2>Producciones</h2>
+<h3>Artículos científicos publicados en revistas académicas</h3>
 
-        <ol class="publicaciones-lista">
-          <li><strong><a href="https://doi.org/10.22185/24487147.2026.121.06" target="_blank" rel="noopener noreferrer">Economía plateada en Argentina: ¿oportunidad o espejismo?</a></strong> — <em>Papeles de Población</em> (2026).</li>
-          <li><strong>Envejecimiento y ahorro. Aportes de la transición demográfica</strong> — <em>Ciencias Administrativas</em> (2026).</li>
-          <li><strong>Envejecimiento Demográfico y PIB per cápita: Evidencia comparativa global (1960–2024)</strong> — <em>Revista de Métodos Cuantitativos para la Economía y la Empresa</em> (2026).</li>
-          <li><strong>Economía plateada y actividad física en la vejez: deporte como mercado emergente</strong> — <em>Cadernos Metrópole</em> (2026).</li>
-          <li><strong><a href="https://revistas.unc.edu.ar/index.php/astrolabio/article/view/48361" target="_blank" rel="noopener noreferrer">Ahorro y estructura etaria: evidencia empírica sobre el impacto del envejecimiento poblacional (1960–2023)</a></strong> — <em>Astrolabio. Nueva Época</em> (2026).</li>
-          <li><strong>Ageing and economic growth: alternative metrics, migration and innovation for a cross-cutting análisis</strong> — <em>Población y Desarrollo</em> (2025).</li>
-          <li><strong><a href="https://doi.org/10.5216/ag.v19i1.80921" target="_blank" rel="noopener noreferrer">Economía plateada: retos estructurales y estrategias para un desarrollo inclusivo</a></strong> — <em>Ateliê Geográfico</em> (2025).</li>
-          <li><strong>Economía plateada en América Latina: supuestos y desafíos del envejecimiento</strong> — <em>Enfoques</em> (2025).</li>
-          <li><strong>La paradoja del ahorro en los adultos mayores: Un análisis comparativo entre Argentina y Corea del Sur (1960–2023)</strong> — <em>Pilquen Sección Ciencias Sociales</em> (2025).</li>
-          <li><strong>Tareas ETL más Simples con Pandas: Funciones Útiles Aplicadas sobre Datos Públicos</strong> — <em>Revista Abierta de Informática Aplicada</em> (2024).</li>
-          <li><strong>Valoraciones a la calidad de los datos en las estadísticas públicas y privadas, en la era del BIG DATA</strong> — <em>Bibliotecas. Anales de Investigación</em> (2023).</li>
-          <li><strong>Análisis de calidad de los datos en las estadísticas públicas y privadas, ante la implementación del Big Data</strong> — <em>Ciencias Administrativas</em> (2023).</li>
-          <li><strong>Necesidades básicas insatisfechas según tipos de hogares. Argentina (2001–2010). Análisis provincial y departamental</strong> — <em>Huellas</em> (2023).</li>
-          <li><strong>Las contradicciones entre tecnología y desempleo en los últimos doscientos años en las economías capitalistas de occidente</strong> — <em>Ensayos de Economía</em> (2023).</li>
-          <li><strong><a href="https://www.ingeba.org/lurralde/lurranet/lur46/Lurralde-46-2023_Ariel_Emanuel.pdf" target="_blank" rel="noopener noreferrer">Tasas de suicidio según edad, sexo y regiones geográficas. Argentina (2000–2019)</a></strong> — <em>Lurralde</em> (2023).</li>
-          <li><strong>Calidad de vida en la Argentina. Situación en torno del IV Censo Nacional (1947)</strong> — <em>Estudios Socioterritoriales. Revista de Geografía</em> (2022).</li>
-          <li><strong>La utilidad del Big Data en las estadísticas públicas y empresas privadas</strong> — <em>Cadernos Metrópole</em> (2022).</li>
-          <li><strong>Los impactos demográficos del modelo agroexportador en Argentina</strong> — <em>Astrolabio</em> (2021).</li>
-          <li><strong><a href="https://bcieg.ct.unt.edu.ar/article/view/73/61" target="_blank" rel="noopener noreferrer">¿Qué sabemos sobre las enfermedades infecciosas? Una revisión de la Transición Epidemiológica ante la crisis por COVID-19</a></strong> — <em>Breves Contribuciones del Instituto de Estudios Geográficos</em> (2021).</li>
-          <li><strong><a href="https://www.ingeba.org/lurralde/lurranet/lur43/Lurralde_43_2020_Ariel.pdf" target="_blank" rel="noopener noreferrer">Las situaciones en la Calidad de Vida previa a la construcción de la Nación (Argentina, 1869)</a></strong> — <em>Lurralde</em> (2020).</li>
-          <li><strong>Propuesta de índice de dependencia económica para áreas menores. Su aplicación a la Región Metropolitana de Buenos Aires, Argentina (2010)</strong> — <em>Cadernos Metrópole</em> (2020).</li>
-          <li><strong>La incidencia del factor migratorio en el bono demográfico a nivel provincial. Argentina (1947–2010)</strong> — <em>Cuadernos Geográficos</em> (2020).</li>
-          <li><strong>Tendencias mundiales y regionales de la esperanza de vida en edades extremas. Periodo 1950–2015</strong> — <em>Cardinalis</em> (2020).</li>
-          <li><strong>Heterogeneidad de la brecha de género en la participación laboral de las migraciones intrarregionales en América Latina (2010)</strong> — <em>Papeles de Geografía</em> (2020).</li>
-          <li><strong>Diferencia en la participación laboral según país de nacimiento y destino en los mercados de trabajo de América Latina, para la ronda de censos 2010</strong> — <em>Revista Enfoques</em> (2020).</li>
-          <li><strong>Las disparidades entre las cargas de dependencia demográficas provinciales. Argentina (1914–2010)</strong> — <em>Ateliê Geográfico</em> (2019).</li>
-          <li><strong>La población longeva en los países de América Latina</strong> — <em>Cardinalis</em> (2019).</li>
-          <li><strong>Análisis espacial del envejecimiento en el partido de General Pueyrredón (Año 2010)</strong> — <em>Cardinalis</em> (2018).</li>
-          <li><strong>De un área desértica e improductiva a un espacio ideal para la especulación: las percepciones sobre la costa atlántica bonaerense</strong> — <em>Boletim Goiano de Geografia</em> (2018).</li>
-          <li><strong><a href="https://doi.org/10.5752/p.2318-2962.2018v28n52p54" target="_blank" rel="noopener noreferrer">La inserción laboral de las principales corrientes migratorias latinoamericanas en Argentina. Periodo 1991–2010</a></strong> — <em>Caderno de Geografia</em> (2018).</li>
-          <li><strong>Interrelación entre segregación espacial y segmentación laboral en los bolivianos, paraguayos y peruanos residentes en la Ciudad Autónoma de Buenos Aires (Años 2001–2010)</strong> — <em>GeoAmazônia</em> (2018).</li>
-          <li><strong>La influencia de la edad en la inserción de trabajo como dependiente o independiente y su comportamiento a nivel espacial. Argentina (2001 y 2010)</strong> — <em>Ateliê Geográfico</em> (2017).</li>
-          <li><strong>La descoordinación entre la producción, el empleo y las migraciones. Argentina (1980–2010)</strong> — <em>Revista de Estudios Regionales</em> (2017).</li>
-          <li><strong>Interrelaciones entre ramas de actividad y tamaño de las empresas. Segmentación del mercado de trabajo por regiones y categorías urbanas. Argentina (2010)</strong> — <em>Revista Pilquen</em> (2017).</li>
-          <li><strong>¿Por qué últimos? Las peores situaciones de calidad de vida en la Argentina (2010)</strong> — <em>Contemporânea</em> (2017).</li>
-          <li><strong><a href="https://www.ingeba.org/lurralde/lurranet/lur40/40ariel.pdf" target="_blank" rel="noopener noreferrer">Inserción laboral-educacional de las nuevas migraciones en la Argentina (2001–2010)</a></strong> — <em>Lurralde</em> (2017).</li>
-          <li><strong>Desigualdad de acceso al empleo formal entre inmigrantes y nativos. Argentina (2001 y 2010). Aportes a la crítica de la teoría del capital humano</strong> — <em>Continentes</em> (2017).</li>
-          <li><strong><a href="https://ojs2.fch.unicen.edu.ar/ojs-3.1.0/index.php/estudios-socioterritoriales/article/view/315/283" target="_blank" rel="noopener noreferrer">La heterogeneidad del bono demográfico entre los países de América Latina</a></strong> — <em>Estudios Socioterritoriales</em> (2016).</li>
-          <li><strong><a href="https://www.redalyc.org/pdf/171/17149048005.pdf" target="_blank" rel="noopener noreferrer">La inexactitud de la relación de dependencia demográfica. Análisis del caso argentino (Años: 2001–2010)</a></strong> — <em>Cuadernos Geográficos</em> (2016).</li>
-          <li><strong>Síntesis de la demografía y la economía: el producto bruto interno (PBI) per cápita</strong> — <em>Boletim Goiano de Geografia</em> (2016).</li>
-          <li><strong><a href="https://revista.ufrr.br/actageo/en/article/view/3182" target="_blank" rel="noopener noreferrer">Segmentación del mercado de trabajo según regiones y categorías urbanas. Argentina, 1991–2010</a></strong> — <em>Acta Geográfica</em> (2016).</li>
-          <li><strong><a href="https://revistas.unc.edu.ar/index.php/cardi/article/view/14882" target="_blank" rel="noopener noreferrer">Calidad de vida y desigualdad en el área metropolitana de Buenos Aires. Análisis a nivel de fracción censal (2010)</a></strong> — <em>Revista Cardinalis</em> (2016).</li>
-          <li><strong>El rol del espacio geográfico como determinante de la participación laboral. Argentina (2001–2010)</strong> — <em>Revista Tamoios</em> (2016).</li>
-          <li><strong>Estructura ocupacional argentina. ¿Qué ocultan los promedios? Análisis según regiones y escala urbana (2010)</strong> — <em>Papeles de Geografía</em> (2016).</li>
-          <li><strong>La teoría de la transición demográfica y su inexactitud para América Latina. Periodo 1950–2000</strong> — <em>Revista de Geografia (Recife)</em> (2016).</li>
-          <li><strong>Desigualdades en la oferta de empleo según regiones y categorías urbanas. Argentina (2010)</strong> — <em>Ágora</em> (2016).</li>
-          <li><strong><a href="https://revistas.unipar.br/index.php/akropolis/article/view/6052/3373" target="_blank" rel="noopener noreferrer">¿Cuál es la relación entre Bono Demográfico y Crecimiento Económico?</a></strong> — <em>Akropolis</em> (2016).</li>
-          <li><strong><a href="https://revistas.uepg.br/index.php/sociais/es/article/view/7984" target="_blank" rel="noopener noreferrer">El impacto económico del Bono Demográfico en los países de América Latina durante la segunda mitad del siglo XX. Un análisis crítico</a></strong> — <em>Publicatio UEPG: Ciências Sociais Aplicadas</em> (2016).</li>
-          <li><strong>Un análisis espacial de la demanda de empleo. Argentina (años 2001 y 2010)</strong> — <em>Caderno de Geografia</em> (2016).</li>
-          <li><strong>El aporte de la dimensión geográfica en el análisis de los desequilibrios del mercado laboral argentino. Años 2001 y 2010</strong> — <em>Geografia em Atos</em> (2016).</li>
-          <li><strong><a href="https://periodicos.ufpa.br/index.php/geoamazonia/article/view/12482" target="_blank" rel="noopener noreferrer">Por qué se encuentra concentrada la población centenaria en Argentina? El caso de la Ciudad Autónoma de Buenos Aires</a></strong> — <em>GeoAmazônia</em> (2016).</li>
-          <li><strong>La economía al servicio del mercado vs. la economía al servicio del Estado. Argentina 1976–2014</strong> — <em>Enfoques</em> (2016).</li>
-          <li><strong>Dinámica migratoria y desempleo en la Argentina (1991–2010)</strong> — <em>Ateliê Geográfico</em> (2015).</li>
-          <li><strong>Calidad de vida y desigualdad en los partidos del Gran Buenos Aires</strong> — <em>Revista Geoaraguaia</em> (2015).</li>
-          <li><strong>La evolución de las ciudades intermedias en la Argentina</strong> — <em>Geo UERJ</em> (2015).</li>
-          <li><strong>El Impacto del Bono Demográfico en el Sector Educativo Argentino. Periodo 2010–2040. Un Abordaje Interdisciplinario</strong> — <em>International Journal of Sociology of Education</em> (2015).</li>
-          <li><strong>Las características sui generis del bono demográfico. ¿Cuál es su relación con las teorías del crecimiento económico?</strong> — <em>Revista de Geografia (Recife)</em> (2015).</li>
-          <li><strong><a href="https://www.scielo.org.ar/pdf/esso/v17/v17a07.pdf" target="_blank" rel="noopener noreferrer">Dinámica migratoria y desigualdades regionales en Argentina (1947–2010)</a></strong> — <em>Estudios Socioterritoriales</em> (2015).</li>
-          <li><strong>Balance de las migraciones internas en el Partido de Hurlinghan durante el período 2005–2010</strong> — <em>Revista Cefiro</em> (2014).</li>
-        </ol>
+<ol class="publicaciones-lista">
 
-        <h3>Libros publicados</h3>
-        <ol class="publicaciones-lista">
-          <li><strong><a href="https://doi.org/10.65392/ebook-la-raiz-estructural-del-malestar" target="_blank" rel="noopener noreferrer">La raíz estructural del malestar. Cómo la demografía, la economía y la desigualdad moldean la educación y la salud mental a lo largo del ciclo de vida</a></strong> — <em>Asociación Educar para el Desarrollo Humano</em> (2026).</li>
-          <li><strong><a href="https://www.fch.unicen.edu.ar/atlashyg/economiaII-ebook.pdf" target="_blank" rel="noopener noreferrer">Atlas histórico y geográfico de la Argentina. Economía II</a></strong> — <em>Universidad Nacional del Centro de la Provincia de Buenos Aires</em> (2024).</li>
-          <li><strong><a href="https://www.fch.unicen.edu.ar/atlashyg/economia-ebook.pdf" target="_blank" rel="noopener noreferrer">Atlas histórico y geográfico de la Argentina. Economía I</a></strong> — <em>Universidad Nacional del Centro de la Provincia de Buenos Aires</em> (2023).</li>
-          <li><strong><a href="https://www.researchgate.net/publication/324045162_POBLACION_Y_ECONOMIA_Recorrido_historico_del_estado_del_arte" target="_blank" rel="noopener noreferrer">Población y Economía. Recorrido histórico del estado del arte</a></strong> — <em>Universidad Nacional del Centro de la Provincia de Buenos Aires</em> (2018).</li>
-          <li><strong><a href="https://books.google.com/books?id=RBAFswEACAAJ" target="_blank" rel="noopener noreferrer">Efecto migratorio en las desigualdades regionales. Argentina 1950–2010</a></strong> — <em>Editorial Académica Española</em> (2015).</li>
-        </ol>
-      </section>
-    </section>
-  </main>
+<li><strong><a href="https://doi.org/10.22185/24487147.2026.121.06" target="_blank" rel="noopener noreferrer">Economía plateada en Argentina: ¿oportunidad o espejismo?</a></strong> — <em>Papeles de Población</em> (2026).</li>
 
-  <footer>
-    © 2026 Fernando Ariel Manzano · Sitio profesional personal
-  </footer>
+<li><strong>Envejecimiento y ahorro. Aportes de la transición demográfica</strong> — <em>Ciencias Administrativas</em> (2026).</li>
+
+<li><strong>Envejecimiento Demográfico y PIB per cápita: Evidencia comparativa global (1960–2024)</strong> — <em>Revista de Métodos Cuantitativos para la Economía y la Empresa</em> (2026).</li>
+
+<li><strong><a href="https://www.scielo.br/j/cm/a/cGd7dvKSXMTmhKfkFVFNbpy/?lang=es" target="_blank" rel="noopener noreferrer">Economía plateada y actividad física en la vejez: deporte como mercado emergente</a></strong> — <em>Cadernos Metrópole</em> (2026).</li>
+
+<li><strong><a href="https://revistas.unc.edu.ar/index.php/astrolabio/article/view/48361" target="_blank" rel="noopener noreferrer">Ahorro y estructura etaria: evidencia empírica sobre el impacto del envejecimiento poblacional (1960–2023)</a></strong> — <em>Astrolabio. Nueva Época</em> (2026).</li>
+
+<li><strong><a href="https://doi.org/10.18004/pdfce/2076-054x/2025.031.61.023" target="_blank" rel="noopener noreferrer">Ageing and economic growth: alternative metrics, migration and innovation for a cross-cutting análisis</a></strong> — <em>Población y Desarrollo</em> (2025).</li>
+
+<li><strong><a href="https://doi.org/10.5216/ag.v19i1.80921" target="_blank" rel="noopener noreferrer">Economía plateada: retos estructurales y estrategias para un desarrollo inclusivo</a></strong> — <em>Ateliê Geográfico</em> (2025).</li>
+
+<li><strong><a href="https://doi.org/10.56487/1m14qn80" target="_blank" rel="noopener noreferrer">Economía plateada en América Latina: supuestos y desafíos del envejecimiento</a></strong> — <em>Enfoques</em> (2025).</li>
+
+<li><strong><a href="https://doi.org/10.63376/spilquen.v28i3.6701" target="_blank" rel="noopener noreferrer">La paradoja del ahorro en los adultos mayores: Un análisis comparativo entre Argentina y Corea del Sur (1960–2023)</a></strong> — <em>Pilquen Sección Ciencias Sociales</em> (2025).</li>
+
+<li><strong><a href="https://doi.org/10.59471/raia2024204" target="_blank" rel="noopener noreferrer">Tareas ETL más Simples con Pandas: Funciones Útiles Aplicadas sobre Datos Públicos</a></strong> — <em>Revista Abierta de Informática Aplicada</em> (2024).</li>
+
+<li><strong><a href="http://revistas.bnjm.cu/index.php/BAI/article/view/461" target="_blank" rel="noopener noreferrer">Valoraciones a la calidad de los datos en las estadísticas públicas y privadas, en la era del BIG DATA</a></strong> — <em>Bibliotecas. Anales de Investigación</em> (2023).</li>
+
+<li><strong><a href="https://doi.org/10.24215/23143738e119" target="_blank" rel="noopener noreferrer">Análisis de calidad de los datos en las estadísticas públicas y privadas, ante la implementación del Big Data</a></strong> — <em>Ciencias Administrativas</em> (2023).</li>
+
+<li><strong><a href="https://doi.org/10.19137/huellas-2023-2704" target="_blank" rel="noopener noreferrer">Necesidades básicas insatisfechas según tipos de hogares. Argentina (2001–2010). Análisis provincial y departamental</a></strong> — <em>Huellas</em> (2023).</li>
+
+<li><strong><a href="https://doi.org/10.15446/ede.v33n62.101032" target="_blank" rel="noopener noreferrer">Las contradicciones entre tecnología y desempleo en los últimos doscientos años en las economías capitalistas de occidente</a></strong> — <em>Ensayos de Economía</em> (2023).</li>
+
+<li><strong><a href="https://www.ingeba.org/lurralde/lurranet/lur46/Lurralde-46-2023_Ariel_Emanuel.pdf" target="_blank" rel="noopener noreferrer">Tasas de suicidio según edad, sexo y regiones geográficas. Argentina (2000–2019)</a></strong> — <em>Lurralde</em> (2023).</li>
+
+<li><strong><a href="https://doi.org/10.37838/unicen/est.32-128" target="_blank" rel="noopener noreferrer">Calidad de vida en la Argentina. Situación en torno del IV Censo Nacional (1947)</a></strong> — <em>Estudios Socioterritoriales. Revista de Geografía</em> (2022).</li>
+
+<li><strong><a href="https://doi.org/10.1590/2236-9996.2022-5506" target="_blank" rel="noopener noreferrer">La utilidad del Big Data en las estadísticas públicas y empresas privadas</a></strong> — <em>Cadernos Metrópole</em> (2022).</li>
+
+<li><strong><a href="https://revistas.unc.edu.ar/index.php/astrolabio/article/view/25110" target="_blank" rel="noopener noreferrer">Los impactos demográficos del modelo agroexportador en Argentina</a></strong> — <em>Astrolabio</em> (2021).</li>
+
+<li><strong><a href="https://bcieg.ct.unt.edu.ar/article/view/73/61" target="_blank" rel="noopener noreferrer">¿Qué sabemos sobre las enfermedades infecciosas? Una revisión de la Transición Epidemiológica ante la crisis por COVID-19</a></strong> — <em>Breves Contribuciones del Instituto de Estudios Geográficos</em> (2021).</li>
+
+<li><strong><a href="https://www.ingeba.org/lurralde/lurranet/lur43/Lurralde_43_2020_Ariel.pdf" target="_blank" rel="noopener noreferrer">Las situaciones en la Calidad de Vida previa a la construcción de la Nación (Argentina, 1869)</a></strong> — <em>Lurralde</em> (2020).</li>
+
+<li><strong><a href="https://doi.org/10.1590/2236-9996.2020-4713" target="_blank" rel="noopener noreferrer">Propuesta de índice de dependencia económica para áreas menores. Su aplicación a la Región Metropolitana de Buenos Aires, Argentina (2010)</a></strong> — <em>Cadernos Metrópole</em> (2020).</li>
+
+<li><strong><a href="https://doi.org/10.30827/cuadgeo.v59i1.8085" target="_blank" rel="noopener noreferrer">La incidencia del factor migratorio en el bono demográfico a nivel provincial. Argentina (1947–2010)</a></strong> — <em>Cuadernos Geográficos</em> (2020).</li>
+
+<li><strong><a href="https://revistas.unc.edu.ar/index.php/cardi/article/view/29873" target="_blank" rel="noopener noreferrer">Tendencias mundiales y regionales de la esperanza de vida en edades extremas. Periodo 1950–2015</a></strong> — <em>Cardinalis</em> (2020).</li>
+
+<li><strong><a href="https://revistas.um.es/geografia/article/view/408771/287111" target="_blank" rel="noopener noreferrer">Heterogeneidad de la brecha de género en la participación laboral de las migraciones intrarregionales en América Latina (2010)</a></strong> — <em>Papeles de Geografía</em> (2020).</li>
+
+<li><strong><a href="http://revistaenfoques.cl/index.php/revista-uno/article/view/518" target="_blank" rel="noopener noreferrer">Diferencia en la participación laboral según país de nacimiento y destino en los mercados de trabajo de América Latina, para la ronda de censos 2010</a></strong> — <em>Revista Enfoques</em> (2020).</li>
+
+<li><strong><a href="https://doi.org/10.5216/ag.v13i3.57440" target="_blank" rel="noopener noreferrer">Las disparidades entre las cargas de dependencia demográficas provinciales. Argentina (1914–2010)</a></strong> — <em>Ateliê Geográfico</em> (2019).</li>
+
+<li><strong><a href="https://revistas.unc.edu.ar/index.php/cardi/article/view/24942/24224" target="_blank" rel="noopener noreferrer">La población longeva en los países de América Latina</a></strong> — <em>Cardinalis</em> (2019).</li>
+
+<li><strong><a href="https://revistas.unc.edu.ar/index.php/cardi/article/view/20667/20313" target="_blank" rel="noopener noreferrer">Análisis espacial del envejecimiento en el partido de General Pueyrredón (Año 2010)</a></strong> — <em>Cardinalis</em> (2018).</li>
+
+<li><strong><a href="https://doi.org/10.5216/bgg.v38i2.54608" target="_blank" rel="noopener noreferrer">De un área desértica e improductiva a un espacio ideal para la especulación: las percepciones sobre la costa atlántica bonaerense</a></strong> — <em>Boletim Goiano de Geografia</em> (2018).</li>
+
+<li><strong><a href="https://doi.org/10.5752/p.2318-2962.2018v28n52p54" target="_blank" rel="noopener noreferrer">La inserción laboral de las principales corrientes migratorias latinoamericanas en Argentina. Periodo 1991–2010</a></strong> — <em>Caderno de Geografia</em> (2018).</li>
+
+<li><strong><a href="https://doi.org/10.18542/geo.v6i11.12510" target="_blank" rel="noopener noreferrer">Interrelación entre segregación espacial y segmentación laboral en los bolivianos, paraguayos y peruanos residentes en la Ciudad Autónoma de Buenos Aires (Años 2001–2010)</a></strong> — <em>GeoAmazônia</em> (2018).</li>
+
+<li><strong><a href="https://doi.org/10.5216/ag.v11i1.44860" target="_blank" rel="noopener noreferrer">La influencia de la edad en la inserción de trabajo como dependiente o independiente y su comportamiento a nivel espacial. Argentina (2001 y 2010)</a></strong> — <em>Ateliê Geográfico</em> (2017).</li>
+
+<li><strong><a href="http://www.revistaestudiosregionales.com/contenido/ver/id/131" target="_blank" rel="noopener noreferrer">La descoordinación entre la producción, el empleo y las migraciones. Argentina (1980–2010)</a></strong> — <em>Revista de Estudios Regionales</em> (2017).</li>
+
+<li><strong><a href="http://revele.uncoma.edu.ar/htdoc/revele/index.php/Sociales/article/view/1649" target="_blank" rel="noopener noreferrer">Interrelaciones entre ramas de actividad y tamaño de las empresas. Segmentación del mercado de trabajo por regiones y categorías urbanas. Argentina (2010)</a></strong> — <em>Revista Pilquen</em> (2017).</li>
+
+<li><strong><a href="https://doi.org/10.4322/2316-1329.043" target="_blank" rel="noopener noreferrer">¿Por qué últimos? Las peores situaciones de calidad de vida en la Argentina (2010)</a></strong> — <em>Contemporânea</em> (2017).</li>
+
+<li><strong><a href="https://www.ingeba.org/lurralde/lurranet/lur40/40ariel.pdf" target="_blank" rel="noopener noreferrer">Inserción laboral-educacional de las nuevas migraciones en la Argentina (2001–2010)</a></strong> — <em>Lurralde</em> (2017).</li>
+
+<li><strong><a href="http://www.tiagomarino.com/continentes/index.php/continentes/article/view/172" target="_blank" rel="noopener noreferrer">Desigualdad de acceso al empleo formal entre inmigrantes y nativos. Argentina (2001 y 2010). Aportes a la crítica de la teoría del capital humano</a></strong> — <em>Continentes</em> (2017).</li>
+
+<li><strong><a href="https://ojs2.fch.unicen.edu.ar/ojs-3.1.0/index.php/estudios-socioterritoriales/article/view/315/283" target="_blank" rel="noopener noreferrer">La heterogeneidad del bono demográfico entre los países de América Latina</a></strong> — <em>Estudios Socioterritoriales</em> (2016).</li>
+
+<li><strong><a href="https://www.redalyc.org/pdf/171/17149048005.pdf" target="_blank" rel="noopener noreferrer">La inexactitud de la relación de dependencia demográfica. Análisis del caso argentino (Años: 2001–2010)</a></strong> — <em>Cuadernos Geográficos</em> (2016).</li>
+
+<li><strong><a href="https://doi.org/10.5216/bgg.v36i1.40372" target="_blank" rel="noopener noreferrer">Síntesis de la demografía y la economía: el producto bruto interno (PBI) per cápita</a></strong> — <em>Boletim Goiano de Geografia</em> (2016).</li>
+
+<li><strong><a href="https://revista.ufrr.br/actageo/en/article/view/3182" target="_blank" rel="noopener noreferrer">Segmentación del mercado de trabajo según regiones y categorías urbanas. Argentina, 1991–2010</a></strong> — <em>Acta Geográfica</em> (2016).</li>
+
+<li><strong><a href="https://revistas.unc.edu.ar/index.php/cardi/article/view/14882" target="_blank" rel="noopener noreferrer">Calidad de vida y desigualdad en el área metropolitana de Buenos Aires. Análisis a nivel de fracción censal (2010)</a></strong> — <em>Revista Cardinalis</em> (2016).</li>
+
+<li><strong><a href="https://doi.org/10.12957/tamoios.2016.21438" target="_blank" rel="noopener noreferrer">El rol del espacio geográfico como determinante de la participación laboral. Argentina (2001–2010)</a></strong> — <em>Revista Tamoios</em> (2016).</li>
+
+<li><strong><a href="https://doi.org/10.6018/geografia/2016/242091" target="_blank" rel="noopener noreferrer">Estructura ocupacional argentina. ¿Qué ocultan los promedios? Análisis según regiones y escala urbana (2010)</a></strong> — <em>Papeles de Geografía</em> (2016).</li>
+
+<li><strong><a href="https://periodicos.ufpe.br/revistas/revistageografia/article/view/229248" target="_blank" rel="noopener noreferrer">La teoría de la transición demográfica y su inexactitud para América Latina. Periodo 1950–2000</a></strong> — <em>Revista de Geografia (Recife)</em> (2016).</li>
+
+<li><strong><a href="https://doi.org/10.17058/agora.v17i2.6700" target="_blank" rel="noopener noreferrer">Desigualdades en la oferta de empleo según regiones y categorías urbanas. Argentina (2010)</a></strong> — <em>Ágora</em> (2016).</li>
+
+<li><strong><a href="https://revistas.unipar.br/index.php/akropolis/article/view/6052/3373" target="_blank" rel="noopener noreferrer">¿Cuál es la relación entre Bono Demográfico y Crecimiento Económico?</a></strong> — <em>Akropolis</em> (2016).</li>
+
+<li><strong><a href="https://revistas.uepg.br/index.php/sociais/es/article/view/7984" target="_blank" rel="noopener noreferrer">El impacto económico del Bono Demográfico en los países de América Latina durante la segunda mitad del siglo XX. Un análisis crítico</a></strong> — <em>Publicatio UEPG: Ciências Sociais Aplicadas</em> (2016).</li>
+
+<li><strong><a href="https://doi.org/10.5752/P.2318-2962.2016v26n46p577" target="_blank" rel="noopener noreferrer">Un análisis espacial de la demanda de empleo. Argentina (años 2001 y 2010)</a></strong> — <em>Caderno de Geografia</em> (2016).</li>
+
+<li><strong><a href="https://doi.org/10.35416/geoatos.v1i3.4498" target="_blank" rel="noopener noreferrer">El aporte de la dimensión geográfica en el análisis de los desequilibrios del mercado laboral argentino. Años 2001 y 2010</a></strong> — <em>Geografia em Atos</em> (2016).</li>
+
+<li><strong><a href="https://periodicos.ufpa.br/index.php/geoamazonia/article/view/12482" target="_blank" rel="noopener noreferrer">Por qué se encuentra concentrada la población centenaria en Argentina? El caso de la Ciudad Autónoma de Buenos Aires</a></strong> — <em>GeoAmazônia</em> (2016).</li>
+
+<li><strong><a href="http://publicaciones.uap.edu.ar/index.php/revistaenfoques/article/view/466" target="_blank" rel="noopener noreferrer">La economía al servicio del mercado vs. la economía al servicio del Estado. Argentina 1976–2014</a></strong> — <em>Enfoques</em> (2016).</li>
+
+<li><strong><a href="https://doi.org/10.5216/ag.v9i2.34068" target="_blank" rel="noopener noreferrer">Dinámica migratoria y desempleo en la Argentina (1991–2010)</a></strong> — <em>Ateliê Geográfico</em> (2015).</li>
+
+<li><strong><a href="http://revistas.cua.ufmt.br/geoaraguaia/index.php/geo/article/view/135" target="_blank" rel="noopener noreferrer">Calidad de vida y desigualdad en los partidos del Gran Buenos Aires</a></strong> — <em>Revista Geoaraguaia</em> (2015).</li>
+
+<li><strong><a href="https://doi.org/10.12957/geouerj.2015.18859" target="_blank" rel="noopener noreferrer">La evolución de las ciudades intermedias en la Argentina</a></strong> — <em>Geo UERJ</em> (2015).</li>
+
+<li><strong><a href="https://doi.org/10.17583/rise.2015.1692" target="_blank" rel="noopener noreferrer">El Impacto del Bono Demográfico en el Sector Educativo Argentino. Periodo 2010–2040. Un Abordaje Interdisciplinario</a></strong> — <em>International Journal of Sociology of Education</em> (2015).</li>
+
+<li><strong><a href="https://periodicos.ufpe.br/revistas/revistageografia/article/view/229153" target="_blank" rel="noopener noreferrer">Las características sui generis del bono demográfico. ¿Cuál es su relación con las teorías del crecimiento económico?</a></strong> — <em>Revista de Geografia (Recife)</em> (2015).</li>
+
+<li><strong><a href="https://www.scielo.org.ar/pdf/esso/v17/v17a07.pdf" target="_blank" rel="noopener noreferrer">Dinámica migratoria y desigualdades regionales en Argentina (1947–2010)</a></strong> — <em>Estudios Socioterritoriales</em> (2015).</li>
+
+</ol>
+
+<h3>Libros publicados</h3>
+<ol class="publicaciones-lista">
+
+<li><strong><a href="https://doi.org/10.65392/ebook-la-raiz-estructural-del-malestar" target="_blank" rel="noopener noreferrer">La raíz estructural del malestar. Cómo la demografía, la economía y la desigualdad moldean la educación y la salud mental a lo largo del ciclo de vida</a></strong> — <em>Asociación Educar para el Desarrollo Humano</em> (2026).</li>
+
+<li><strong><a href="https://www.fch.unicen.edu.ar/atlashyg/economiaII-ebook.pdf" target="_blank" rel="noopener noreferrer">Atlas histórico y geográfico de la Argentina. Economía II</a></strong> — <em>Universidad Nacional del Centro de la Provincia de Buenos Aires</em> (2024).</li>
+
+<li><strong><a href="https://www.fch.unicen.edu.ar/atlashyg/economia-ebook.pdf" target="_blank" rel="noopener noreferrer">Atlas histórico y geográfico de la Argentina. Economía I</a></strong> — <em>Universidad Nacional del Centro de la Provincia de Buenos Aires</em> (2023).</li>
+
+<li><strong><a href="https://www.researchgate.net/publication/324045162_POBLACION_Y_ECONOMIA_Recorrido_historico_del_estado_del_arte" target="_blank" rel="noopener noreferrer">Población y Economía. Recorrido histórico del estado del arte</a></strong> — <em>Universidad Nacional del Centro de la Provincia de Buenos Aires</em> (2018).</li>
+
+<li><strong><a href="https://books.google.com/books?id=RBAFswEACAAJ" target="_blank" rel="noopener noreferrer">Efecto migratorio en las desigualdades regionales. Argentina 1950–2010</a></strong> — <em>Editorial Académica Española</em> (2015).</li>
+
+</ol>
+</section>
+
+</section>
+</main>
+
+<footer>
+  © 2026 Fernando Ariel Manzano · Sitio profesional personal
+</footer>
 </body>
 </html>
