@@ -8,8 +8,7 @@
   --ink: #192b45;
   --muted: #26364a;
   --line: #e1e7ef;
-  --soft: #eef2f7;
-  --hover: #37567a;
+  --soft: #f1f4f8;
 }
 
 * {
@@ -37,7 +36,6 @@ header {
   margin: auto;
   padding: 28px 30px;
   border-bottom: 1px solid var(--line);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,11 +99,9 @@ p {
 
 .hero {
   min-height: 650px;
-
   display: grid;
   grid-template-columns: 1.2fr .85fr;
   align-items: center;
-
   gap: 75px;
   padding: 85px 0;
 }
@@ -141,9 +137,7 @@ p {
   max-width: 640px;
 }
 
-/* ==========================================
-   BOTONES DE INICIO
-========================================== */
+/* BOTONES DE INICIO */
 
 .hero .actions {
   display: flex;
@@ -157,17 +151,13 @@ p {
 .btn {
   display: inline-block;
   text-decoration: none;
-
   border: 1px solid var(--ink);
   border-radius: 5px;
-
   padding: 13px 16px;
-
   font-size: 15px;
   font-weight: 700;
   white-space: nowrap;
   flex-shrink: 0;
-
   transition: background .2s, color .2s;
 }
 
@@ -183,22 +173,18 @@ p {
 
 .btn:hover,
 .btn:focus-visible {
-  background: var(--hover);
+  background: #37567a;
   color: #ffffff;
 }
 
-/* ==========================================
-   FOTOGRAFÍA
-========================================== */
+/* FOTOGRAFÍA */
 
 .photo {
   width: 100%;
   max-width: 410px;
-  aspect-ratio: 4 / 4.5;
-
+  aspect-ratio: 4/4.5;
   object-fit: cover;
   object-position: center top;
-
   border-radius: 6px;
   display: block;
   justify-self: end;
@@ -240,75 +226,74 @@ p {
 .presentacion {
   max-width: 850px;
   margin: 12px 0 26px;
-
   color: var(--muted);
   font-size: 17px;
   line-height: 1.65;
 }
 
+/* TÍTULO DEL MENÚ */
+
+.titulo-navegacion {
+  font-size: 15px !important;
+  font-weight: 700;
+  color: var(--ink) !important;
+  margin: 28px 0 12px;
+}
+
 /* ==========================================
-   NAVEGACIÓN POR SECCIONES
+   MENÚ DE NAVEGACIÓN
    FORMACIÓN - CARGOS - PRODUCCIONES
 ========================================== */
 
 .menu-secciones {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-
-  gap: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
   max-width: 850px;
-  margin: 30px 0 48px;
+  margin: 24px 0 48px;
 }
 
-/* BOTONES DE NAVEGACIÓN */
+/* BOTONES AZUL OSCURO */
 
 .menu-secciones a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-
-  min-width: 155px;
-  min-height: 58px;
-  padding: 16px 24px;
-
-  background: var(--soft);
-  border: 1px solid var(--ink);
-  border-radius: 5px;
-
-  color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  min-height: 66px;
+  padding: 16px 20px;
+  background: var(--ink);
+  color: #ffffff;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  font-size: 17px;
   font-weight: 700;
-
-  text-align: center;
   text-decoration: none;
-
+  text-align: center;
   cursor: pointer;
-
   transition:
-    background .2s ease,
-    color .2s ease,
-    border-color .2s ease;
+    background .2s,
+    border-color .2s,
+    transform .2s;
 }
 
-/* ELIMINAR TEXTOS Y FLECHAS ADICIONALES */
+/* ELIMINAR TEXTOS SECUNDARIOS */
 
 .menu-secciones a::after {
   content: none;
 }
 
-/* EFECTO INTERACTIVO */
+/* INTERACCIÓN */
 
 .menu-secciones a:hover,
 .menu-secciones a:focus-visible {
-  background: var(--ink);
-  border-color: var(--ink);
+  background: #37567a;
+  border-color: #37567a;
   color: #ffffff;
+  transform: translateY(-2px);
 }
 
 /* ==========================================
-   SECCIONES DE INVESTIGACIÓN
+   FORMACIÓN Y OTRAS SECCIONES
 ========================================== */
 
 .formacion,
@@ -335,7 +320,7 @@ p {
 }
 
 /* ==========================================
-   FORMACIÓN ACADÉMICA
+   TÍTULOS ACADÉMICOS
 ========================================== */
 
 .estudio {
@@ -346,13 +331,11 @@ p {
 .estudio h3 {
   margin: 0 0 4px;
   font-size: 17px;
-  font-weight: 700;
   color: var(--ink);
 }
 
 .estudio p {
   margin: 0;
-  color: var(--muted);
 }
 
 /* ==========================================
@@ -361,11 +344,6 @@ p {
 
 .evolucion {
   margin-top: 42px;
-}
-
-.evolucion h2 {
-  margin-bottom: 16px;
-  color: var(--ink);
 }
 
 .evolucion h3 {
@@ -377,8 +355,6 @@ p {
 
 .evolucion p {
   margin-bottom: 16px;
-  color: var(--muted);
-  line-height: 1.75;
 }
 
 /* ==========================================
@@ -396,21 +372,6 @@ p {
 }
 
 /* ==========================================
-   ACCESIBILIDAD Y NAVEGACIÓN
-========================================== */
-
-a:focus-visible {
-  outline: 2px solid #37567a;
-  outline-offset: 3px;
-}
-
-#formacion,
-#cargos,
-#producciones {
-  scroll-margin-top: 30px;
-}
-
-/* ==========================================
    PIE DE PÁGINA
 ========================================== */
 
@@ -418,15 +379,13 @@ footer {
   border-top: 1px solid var(--line);
   max-width: 1120px;
   margin: auto;
-
   padding: 28px 30px;
-
   color: #34445a;
   font-size: 13px;
 }
 
 /* ==========================================
-   ADAPTACIÓN A TABLETS Y CELULARES
+   ADAPTACIÓN A CELULARES
 ========================================== */
 
 @media (max-width: 760px) {
@@ -444,8 +403,6 @@ footer {
   main {
     padding: 0 20px;
   }
-
-  /* INICIO */
 
   .hero {
     grid-template-columns: 1fr;
@@ -473,68 +430,21 @@ footer {
     padding: 11px 13px;
   }
 
-  /* PÁGINAS INTERIORES */
-
   .page {
     padding: 55px 0 90px;
   }
 
+  .menu-secciones {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .menu-secciones a {
+    min-height: 65px;
+    font-size: 16px;
+  }
+
   .presentacion {
     font-size: 16px;
-  }
-
-  /* BOTONES DE INVESTIGACIÓN */
-
-  .menu-secciones {
-    gap: 12px;
-    margin: 26px 0 40px;
-  }
-
-  .menu-secciones a {
-    min-width: 140px;
-    min-height: 54px;
-    padding: 13px 18px;
-    font-size: 15px;
-  }
-}
-
-/* ==========================================
-   PANTALLAS PEQUEÑAS
-========================================== */
-
-@media (max-width: 480px) {
-
-  .menu-secciones {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .menu-secciones a {
-    width: 100%;
-    min-height: 50px;
-    font-size: 15px;
-  }
-
-  .formacion h2,
-  .seccion-investigacion h2 {
-    font-size: 25px;
-  }
-
-  .page p {
-    font-size: 16px;
-  }
-}
-
-/* RESPETAR PREFERENCIAS DE MOVIMIENTO */
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  .btn,
-  .menu-secciones a {
-    transition: none;
   }
 }
