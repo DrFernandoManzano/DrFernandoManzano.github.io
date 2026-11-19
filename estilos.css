@@ -1,68 +1,429 @@
 
-:root{--ink:#192b45;--muted:#53667d;--line:#e1e7ef}*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}header{max-width:1120px;margin:auto;padding:28px 30px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}header a{text-decoration:none;color:var(--ink)}.brand{font-size:14px;font-weight:700;letter-spacing:.04em}nav{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}nav a:hover{text-decoration:underline}main{max-width:1120px;margin:auto;padding:0 30px}.hero{min-height:650px;display:grid;grid-template-columns:1.2fr .85fr;align-items:center;gap:75px;padding:85px 0}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#526783;margin:0 0 20px}h1{font-size:clamp(36px,4vw,56px);line-height:1.12;letter-spacing:-.035em;margin:0 0 24px}h2{font-size:29px;line-height:1.2;margin:0 0 16px}.credentials{font-size:19px;font-weight:600;margin:0 0 16px}.affiliation{font-size:16px;margin:0 0 22px}.intro{font-size:18px;color:var(--muted);margin:0 0 30px;max-width:640px}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-block;text-decoration:none;border:1px solid var(--ink);border-radius:5px;padding:13px 19px;font-size:14px;font-weight:700;transition:background .2s,color .2s}.btn.primary{background:var(--ink);color:white}.btn.secondary{background:white;color:var(--ink)}.btn:hover,.btn:focus-visible{background:#37567a;color:#fff}.photo{width:100%;max-width:410px;aspect-ratio:4/4.5;object-fit:cover;object-position:center top;border-radius:6px;display:block;justify-self:end}.page{max-width:850px;padding:85px 0 130px;min-height:65vh}.page p{color:var(--muted);font-size:17px}.back{display:inline-block;margin-bottom:30px;color:#1b5d91;text-decoration:none}.back:hover{text-decoration:underline}footer{border-top:1px solid var(--line);max-width:1120px;margin:auto;padding:28px 30px;color:var(--muted);font-size:13px}@media(max-width:760px){header{padding:20px;align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{grid-template-columns:1fr;gap:30px;padding:48px 0;min-height:0}.photo{grid-row:1;width:65%;max-width:280px;justify-self:start;aspect-ratio:1}.intro{font-size:16px}.page{padding:55px 0 90px}main{padding:0 20px}}
-/* Tres botones en una sola línea */
-.hero .botones,
-.hero .acciones,
-.hero .hero-buttons,
-.hero .buttons {
+/* ==========================================
+   SITIO PROFESIONAL - FERNANDO ARIEL MANZANO
+   ESTILOS GENERALES
+========================================== */
+
+:root {
+  --ink: #192b45;
+  --muted: #26364a;
+  --line: #e1e7ef;
+  --soft: #f1f4f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+
+/* ENCABEZADO */
+
+header {
+  max-width: 1120px;
+  margin: auto;
+  padding: 28px 30px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.brand {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+header nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ESTRUCTURA GENERAL */
+
+main {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+h1 {
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.12;
+  letter-spacing: -.035em;
+  margin: 0 0 24px;
+  color: var(--ink);
+}
+
+h2 {
+  font-size: 29px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  color: var(--ink);
+}
+
+p {
+  color: var(--muted);
+}
+
+/* ==========================================
+   PÁGINA DE INICIO
+========================================== */
+
+.hero {
+  min-height: 650px;
+  display: grid;
+  grid-template-columns: 1.2fr .85fr;
+  align-items: center;
+  gap: 75px;
+  padding: 85px 0;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #34445a;
+  margin: 0 0 20px;
+}
+
+.credentials {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  color: var(--ink);
+}
+
+.affiliation {
+  font-size: 16px;
+  margin: 0 0 22px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.intro {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin: 0 0 30px;
+  max-width: 640px;
+}
+
+/* BOTONES DE INICIO */
+
+.hero .actions {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 8px;
-}
-
-.hero .botones a,
-.hero .acciones a,
-.hero .hero-buttons a,
-.hero .buttons a {
-  white-space: nowrap;
-  font-size: 11px;
-  padding: 12px 10px;
-}
-/* Tres botones en una sola línea */
-
-.hero .actions {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  gap: 6px !important;
+  gap: 6px;
   width: max-content;
   max-width: none;
 }
 
-.hero .actions .btn {
-  white-space: nowrap;
-  font-size: 15px;
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid var(--ink);
+  border-radius: 5px;
   padding: 13px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
   flex-shrink: 0;
+  transition: background .2s, color .2s;
 }
 
-/* CONTRASTE DE TEXTO - PÁGINA DE INICIO */
+.btn.primary {
+  background: var(--ink);
+  color: #ffffff;
+}
 
-/* Texto descriptivo principal */
-.hero .intro {
-  color: #26364a !important;
-  font-size: 16px;
+.btn.secondary {
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: #37567a;
+  color: #ffffff;
+}
+
+/* FOTOGRAFÍA */
+
+.photo {
+  width: 100%;
+  max-width: 410px;
+  aspect-ratio: 4/4.5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 6px;
+  display: block;
+  justify-self: end;
+}
+
+/* ==========================================
+   PÁGINAS INTERIORES
+========================================== */
+
+.page {
+  max-width: 850px;
+  padding: 85px 0 130px;
+  min-height: 65vh;
+}
+
+.page p {
+  color: var(--muted);
+  font-size: 17px;
   line-height: 1.75;
 }
 
-/* Información institucional */
-.hero .affiliation {
-  color: #26364a !important;
+.back {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #1b5d91;
+  text-decoration: none;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================
+   INVESTIGACIÓN CIENTÍFICA
+========================================== */
+
+/* PRESENTACIÓN */
+
+.presentacion {
+  max-width: 850px;
+  margin: 12px 0 26px;
+  color: #26364a;
+  font-size: 17px;
   line-height: 1.65;
 }
 
-/* Título y formación profesional */
-.hero h1,
-.hero .credentials {
-  color: #192b45 !important;
+/* NAVEGACIÓN POR SECCIONES */
+
+.menu-secciones {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 850px;
+  margin: 28px 0 48px;
 }
 
-/* Texto de especialidades */
-.hero .eyebrow {
-  color: #34445a !important;
+/* TARJETAS CLICABLES */
+
+.menu-secciones a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 85px;
+  padding: 18px 12px;
+  background: var(--soft);
+  border: 1px solid #c8d3e0;
+  border-radius: 8px;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(25,43,69,.05);
+  transition: all .2s ease;
 }
 
-/* Pie de página */
+.menu-secciones a::after {
+  content: "↓ Ir a la sección";
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #53667d;
+}
+
+.menu-secciones a:hover,
+.menu-secciones a:focus-visible {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.menu-secciones a:hover::after,
+.menu-secciones a:focus-visible::after {
+  color: #ffffff;
+}
+
+/* FORMACIÓN Y OTRAS SECCIONES */
+
+.formacion,
+.seccion-investigacion {
+  max-width: 850px;
+  margin: 36px 0 56px;
+  scroll-margin-top: 30px;
+}
+
+.formacion h2,
+.seccion-investigacion h2 {
+  color: var(--ink);
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.formacion p,
+.evolucion p,
+.estudio p,
+.seccion-investigacion p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+/* TÍTULOS ACADÉMICOS */
+
+.estudio {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.estudio h3 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  color: var(--ink);
+}
+
+.estudio p {
+  margin: 0;
+}
+
+/* EVOLUCIÓN DE LA INVESTIGACIÓN */
+
+.evolucion {
+  margin-top: 42px;
+}
+
+.evolucion h3 {
+  margin-bottom: 16px;
+  font-size: 21px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.evolucion p {
+  margin-bottom: 16px;
+}
+
+/* CARGOS Y PRODUCCIONES */
+
+.seccion-investigacion {
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.pendiente {
+  color: #53667d;
+  font-style: italic;
+}
+
+/* ==========================================
+   PIE DE PÁGINA
+========================================== */
+
 footer {
+  border-top: 1px solid var(--line);
+  max-width: 1120px;
+  margin: auto;
+  padding: 28px 30px;
   color: #34445a;
+  font-size: 13px;
+}
+
+/* ==========================================
+   ADAPTACIÓN A CELULARES
+========================================== */
+
+@media (max-width: 760px) {
+
+  header {
+    padding: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  header nav {
+    gap: 12px;
+  }
+
+  main {
+    padding: 0 20px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 48px 0;
+    min-height: 0;
+  }
+
+  .photo {
+    grid-row: 1;
+    width: 65%;
+    max-width: 280px;
+    justify-self: start;
+    aspect-ratio: 1;
+  }
+
+  .hero .actions {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .hero .actions .btn {
+    font-size: 13px;
+    padding: 11px 13px;
+  }
+
+  .page {
+    padding: 55px 0 90px;
+  }
+
+  .menu-secciones {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .menu-secciones a {
+    min-height: 65px;
+  }
+
+  .presentacion {
+    font-size: 16px;
+  }
 }
