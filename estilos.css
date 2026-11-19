@@ -35,3 +35,34 @@
   padding: 13px 16px;
   flex-shrink: 0;
 }
+
+/* CONTRASTE DE TEXTO - PÁGINA DE INICIO */
+
+/* Texto descriptivo principal */
+.hero .intro {
+  color: #26364a !important;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* Información institucional */
+.hero .affiliation {
+  color: #26364a !important;
+  line-height: 1.65;
+}
+
+/* Título y formación profesional */
+.hero h1,
+.hero .credentials {
+  color: #192b45 !important;
+}
+
+/* Texto de especialidades */
+.hero .eyebrow {
+  color: #34445a !important;
+}
+
+/* Pie de página */
+footer {
+  color: #34445a;
+}
