@@ -448,3 +448,21 @@ footer {
     font-size: 16px;
   }
 }
+
+/* UNIFICAR BOTONES DE LA PÁGINA DE INICIO */
+
+.hero .actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #192b45;
+  color: #ffffff;
+  border: 1px solid #192b45;
+  text-align: center;
+}
+
+.hero .actions .btn:hover,
+.hero .actions .btn:focus-visible {
+  background: #37567a;
+  border-color: #37567a;
+}
