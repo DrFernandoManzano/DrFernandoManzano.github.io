@@ -466,3 +466,26 @@ footer {
   background: #37567a;
   border-color: #37567a;
 }
+
+/* ENLACE AL CURRÍCULUM ACADÉMICO */
+
+.enlace-cv {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid #e1e7ef;
+}
+
+.enlace-cv a {
+  display: inline-block;
+  color: #192b45;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.enlace-cv a:hover,
+.enlace-cv a:focus-visible {
+  color: #37567a;
+}
