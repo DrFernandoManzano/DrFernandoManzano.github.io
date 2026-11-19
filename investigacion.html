@@ -13,6 +13,38 @@
   </title>
 
   <link rel="stylesheet" href="estilos.css">
+
+  <style>
+    /* Mejoras específicas del apartado Cargos */
+
+    #cargos .universidades-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 28px;
+      row-gap: 10px;
+      padding-left: 20px;
+      margin: 18px 0 22px;
+    }
+
+    #cargos .universidades-grid li {
+      line-height: 1.5;
+    }
+
+    #cargos .parrafo-separado {
+      margin-top: 16px;
+    }
+
+    #cargos > .estudio:last-child {
+      border-bottom: none;
+    }
+
+    @media (max-width: 650px) {
+      #cargos .universidades-grid {
+        grid-template-columns: 1fr;
+        row-gap: 8px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -169,12 +201,22 @@
             nacionales:
           </p>
 
-          <ul>
-            <li>Universidad de Buenos Aires (UBA).</li>
-            <li>Universidad Tecnológica Nacional (UTN).</li>
-            <li>Universidad Nacional de La Plata (UNLP).</li>
-            <li>Universidad Nacional de Rosario (UNR).</li>
-            <li>Universidad Nacional de San Luis (UNSL).</li>
+          <ul class="universidades-grid">
+            <li>
+              Universidad de Buenos Aires (UBA).
+            </li>
+            <li>
+              Universidad Tecnológica Nacional (UTN).
+            </li>
+            <li>
+              Universidad Nacional de La Plata (UNLP).
+            </li>
+            <li>
+              Universidad Nacional de Rosario (UNR).
+            </li>
+            <li>
+              Universidad Nacional de San Luis (UNSL).
+            </li>
             <li>
               Universidad Nacional del Centro de la
               Provincia de Buenos Aires (UNICEN).
@@ -209,7 +251,7 @@
             estadísticas y de inteligencia artificial.
           </p>
 
-          <p>
+          <p class="parrafo-separado">
             Dirección y acompañamiento de investigadores
             en formación, incluyendo tesis de maestría,
             doctorado y becas posdoctorales.
