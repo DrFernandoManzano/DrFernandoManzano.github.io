@@ -489,3 +489,39 @@ footer {
 .enlace-cv a:focus-visible {
   color: #37567a;
 }
+
+/* CARGOS - UNIVERSIDADES EN DOS COLUMNAS */
+
+.universidades-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+  row-gap: 10px;
+  padding-left: 20px;
+  margin: 18px 0 22px;
+}
+
+.universidades-grid li {
+  line-height: 1.5;
+}
+
+/* SEPARACIÓN ENTRE PÁRRAFOS */
+
+.parrafo-separado {
+  margin-top: 16px !important;
+}
+
+/* EVITAR DOBLE LÍNEA AL FINAL DE CARGOS */
+
+#cargos > .estudio:last-child {
+  border-bottom: none;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 650px) {
+  .universidades-grid {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+}
