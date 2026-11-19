@@ -8,7 +8,8 @@
   --ink: #192b45;
   --muted: #26364a;
   --line: #e1e7ef;
-  --soft: #f1f4f8;
+  --soft: #eef2f7;
+  --hover: #37567a;
 }
 
 * {
@@ -27,13 +28,16 @@ body {
   line-height: 1.65;
 }
 
-/* ENCABEZADO */
+/* ==========================================
+   ENCABEZADO
+========================================== */
 
 header {
   max-width: 1120px;
   margin: auto;
   padding: 28px 30px;
   border-bottom: 1px solid var(--line);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,7 +66,9 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* ESTRUCTURA GENERAL */
+/* ==========================================
+   ESTRUCTURA GENERAL
+========================================== */
 
 main {
   max-width: 1120px;
@@ -95,9 +101,11 @@ p {
 
 .hero {
   min-height: 650px;
+
   display: grid;
   grid-template-columns: 1.2fr .85fr;
   align-items: center;
+
   gap: 75px;
   padding: 85px 0;
 }
@@ -133,7 +141,9 @@ p {
   max-width: 640px;
 }
 
-/* BOTONES DE INICIO */
+/* ==========================================
+   BOTONES DE INICIO
+========================================== */
 
 .hero .actions {
   display: flex;
@@ -147,13 +157,17 @@ p {
 .btn {
   display: inline-block;
   text-decoration: none;
+
   border: 1px solid var(--ink);
   border-radius: 5px;
+
   padding: 13px 16px;
+
   font-size: 15px;
   font-weight: 700;
   white-space: nowrap;
   flex-shrink: 0;
+
   transition: background .2s, color .2s;
 }
 
@@ -169,18 +183,22 @@ p {
 
 .btn:hover,
 .btn:focus-visible {
-  background: #37567a;
+  background: var(--hover);
   color: #ffffff;
 }
 
-/* FOTOGRAFÍA */
+/* ==========================================
+   FOTOGRAFÍA
+========================================== */
 
 .photo {
   width: 100%;
   max-width: 410px;
-  aspect-ratio: 4/4.5;
+  aspect-ratio: 4 / 4.5;
+
   object-fit: cover;
   object-position: center top;
+
   border-radius: 6px;
   display: block;
   justify-self: end;
@@ -222,61 +240,76 @@ p {
 .presentacion {
   max-width: 850px;
   margin: 12px 0 26px;
+
   color: var(--muted);
   font-size: 17px;
   line-height: 1.65;
 }
 
-/* NAVEGACIÓN POR SECCIONES */
+/* ==========================================
+   NAVEGACIÓN POR SECCIONES
+   FORMACIÓN - CARGOS - PRODUCCIONES
+========================================== */
 
 .menu-secciones {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 12px;
+
+  gap: 18px;
   max-width: 850px;
-  margin: 28px 0 48px;
+  margin: 30px 0 48px;
 }
 
-/* BOTONES: MISMO ESTILO QUE INICIO */
+/* BOTONES DE NAVEGACIÓN */
 
 .menu-secciones a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 45px;
-  padding: 13px 19px;
-  background: #ffffff;
+
+  min-width: 155px;
+  min-height: 58px;
+  padding: 16px 24px;
+
+  background: var(--soft);
   border: 1px solid var(--ink);
   border-radius: 5px;
+
   color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 1.3;
+
   text-align: center;
   text-decoration: none;
-  box-shadow: none;
-  transition: background .2s, color .2s;
+
+  cursor: pointer;
+
+  transition:
+    background .2s ease,
+    color .2s ease,
+    border-color .2s ease;
 }
 
-/* SIN FLECHAS NI TEXTOS ADICIONALES */
+/* ELIMINAR TEXTOS Y FLECHAS ADICIONALES */
 
 .menu-secciones a::after {
   content: none;
 }
 
-/* INTERACCIÓN */
+/* EFECTO INTERACTIVO */
 
 .menu-secciones a:hover,
 .menu-secciones a:focus-visible {
-  background: #37567a;
-  border-color: #37567a;
+  background: var(--ink);
+  border-color: var(--ink);
   color: #ffffff;
-  transform: none;
 }
 
-/* FORMACIÓN Y OTRAS SECCIONES */
+/* ==========================================
+   SECCIONES DE INVESTIGACIÓN
+========================================== */
 
 .formacion,
 .seccion-investigacion {
@@ -301,7 +334,9 @@ p {
   line-height: 1.75;
 }
 
-/* TÍTULOS ACADÉMICOS */
+/* ==========================================
+   FORMACIÓN ACADÉMICA
+========================================== */
 
 .estudio {
   padding: 15px 0;
@@ -311,17 +346,26 @@ p {
 .estudio h3 {
   margin: 0 0 4px;
   font-size: 17px;
+  font-weight: 700;
   color: var(--ink);
 }
 
 .estudio p {
   margin: 0;
+  color: var(--muted);
 }
 
-/* EVOLUCIÓN DE LA INVESTIGACIÓN */
+/* ==========================================
+   EVOLUCIÓN DE LA INVESTIGACIÓN
+========================================== */
 
 .evolucion {
   margin-top: 42px;
+}
+
+.evolucion h2 {
+  margin-bottom: 16px;
+  color: var(--ink);
 }
 
 .evolucion h3 {
@@ -333,9 +377,13 @@ p {
 
 .evolucion p {
   margin-bottom: 16px;
+  color: var(--muted);
+  line-height: 1.75;
 }
 
-/* CARGOS Y PRODUCCIONES */
+/* ==========================================
+   CARGOS Y PRODUCCIONES
+========================================== */
 
 .seccion-investigacion {
   padding-top: 22px;
@@ -348,6 +396,21 @@ p {
 }
 
 /* ==========================================
+   ACCESIBILIDAD Y NAVEGACIÓN
+========================================== */
+
+a:focus-visible {
+  outline: 2px solid #37567a;
+  outline-offset: 3px;
+}
+
+#formacion,
+#cargos,
+#producciones {
+  scroll-margin-top: 30px;
+}
+
+/* ==========================================
    PIE DE PÁGINA
 ========================================== */
 
@@ -355,13 +418,15 @@ footer {
   border-top: 1px solid var(--line);
   max-width: 1120px;
   margin: auto;
+
   padding: 28px 30px;
+
   color: #34445a;
   font-size: 13px;
 }
 
 /* ==========================================
-   ADAPTACIÓN A CELULARES
+   ADAPTACIÓN A TABLETS Y CELULARES
 ========================================== */
 
 @media (max-width: 760px) {
@@ -379,6 +444,8 @@ footer {
   main {
     padding: 0 20px;
   }
+
+  /* INICIO */
 
   .hero {
     grid-template-columns: 1fr;
@@ -406,22 +473,68 @@ footer {
     padding: 11px 13px;
   }
 
+  /* PÁGINAS INTERIORES */
+
   .page {
     padding: 55px 0 90px;
   }
 
+  .presentacion {
+    font-size: 16px;
+  }
+
+  /* BOTONES DE INVESTIGACIÓN */
+
   .menu-secciones {
-    gap: 10px;
-    margin: 24px 0 38px;
+    gap: 12px;
+    margin: 26px 0 40px;
   }
 
   .menu-secciones a {
-    min-height: 44px;
-    padding: 12px 15px;
-    font-size: 14px;
+    min-width: 140px;
+    min-height: 54px;
+    padding: 13px 18px;
+    font-size: 15px;
+  }
+}
+
+/* ==========================================
+   PANTALLAS PEQUEÑAS
+========================================== */
+
+@media (max-width: 480px) {
+
+  .menu-secciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
-  .presentacion {
+  .menu-secciones a {
+    width: 100%;
+    min-height: 50px;
+    font-size: 15px;
+  }
+
+  .formacion h2,
+  .seccion-investigacion h2 {
+    font-size: 25px;
+  }
+
+  .page p {
     font-size: 16px;
+  }
+}
+
+/* RESPETAR PREFERENCIAS DE MOVIMIENTO */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .btn,
+  .menu-secciones a {
+    transition: none;
   }
 }
