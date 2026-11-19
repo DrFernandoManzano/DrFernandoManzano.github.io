@@ -1,2 +1,21 @@
 
 :root{--ink:#192b45;--muted:#53667d;--line:#e1e7ef}*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}header{max-width:1120px;margin:auto;padding:28px 30px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}header a{text-decoration:none;color:var(--ink)}.brand{font-size:14px;font-weight:700;letter-spacing:.04em}nav{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}nav a:hover{text-decoration:underline}main{max-width:1120px;margin:auto;padding:0 30px}.hero{min-height:650px;display:grid;grid-template-columns:1.2fr .85fr;align-items:center;gap:75px;padding:85px 0}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#526783;margin:0 0 20px}h1{font-size:clamp(36px,4vw,56px);line-height:1.12;letter-spacing:-.035em;margin:0 0 24px}h2{font-size:29px;line-height:1.2;margin:0 0 16px}.credentials{font-size:19px;font-weight:600;margin:0 0 16px}.affiliation{font-size:16px;margin:0 0 22px}.intro{font-size:18px;color:var(--muted);margin:0 0 30px;max-width:640px}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-block;text-decoration:none;border:1px solid var(--ink);border-radius:5px;padding:13px 19px;font-size:14px;font-weight:700;transition:background .2s,color .2s}.btn.primary{background:var(--ink);color:white}.btn.secondary{background:white;color:var(--ink)}.btn:hover,.btn:focus-visible{background:#37567a;color:#fff}.photo{width:100%;max-width:410px;aspect-ratio:4/4.5;object-fit:cover;object-position:center top;border-radius:6px;display:block;justify-self:end}.page{max-width:850px;padding:85px 0 130px;min-height:65vh}.page p{color:var(--muted);font-size:17px}.back{display:inline-block;margin-bottom:30px;color:#1b5d91;text-decoration:none}.back:hover{text-decoration:underline}footer{border-top:1px solid var(--line);max-width:1120px;margin:auto;padding:28px 30px;color:var(--muted);font-size:13px}@media(max-width:760px){header{padding:20px;align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{grid-template-columns:1fr;gap:30px;padding:48px 0;min-height:0}.photo{grid-row:1;width:65%;max-width:280px;justify-self:start;aspect-ratio:1}.intro{font-size:16px}.page{padding:55px 0 90px}main{padding:0 20px}}
+/* Tres botones en una sola línea */
+.hero .botones,
+.hero .acciones,
+.hero .hero-buttons,
+.hero .buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero .botones a,
+.hero .acciones a,
+.hero .hero-buttons a,
+.hero .buttons a {
+  white-space: nowrap;
+  font-size: 11px;
+  padding: 12px 10px;
+}
